@@ -1,13 +1,1 @@
-from student_result import calculate_result
-
-
-def test_pass():
-    assert calculate_result(65) == "Pass"
-
-
-def test_fail():
-    assert calculate_result(30) == "Fail"
-
-
-def test_boundary():
-    assert calculate_result(40) == "Pass"
+def calculate_result(mark):    if mark >= 40:        return "Pass"    else:        return "Fail"if __name__ == "__main__":    mark = 65    print("Student Mark:", mark)    print("Result:", calculate_result(mark))
